@@ -1,0 +1,219 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins%3Awght%40100%3B200%3B300%3B400&display=swap%27%29%3B');
+ 
+ 
+ 
+ 
+ :root {
+
+--color-light-50: #f8f8f8;
+
+--color-dark-50: #797979;
+--color-dark-100: #312d37;
+--color-dark-900: #000;
+--color-green-50:#32CD32;
+--color-green-100:#00FF7F;
+--color-green-200:#008000;
+--color-gradient: linear-gradient(90deg, var(--color-green-50),var(--color-green-100),var(--color-green-200));
+}
+
+
+
+
+
+
+
+
+*{
+
+font-family:'Poppins',sans-serif;
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+
+
+#container {
+    height:100vh;
+    width: 100%;
+
+background: var(--color-gradient);
+display: flex;
+align-items: center;
+justify-content: center;
+
+}
+
+
+#social_media img {
+  
+    width: 35px;
+
+
+
+}
+
+
+
+
+#login_form {
+  
+    background: var(--color-light-50);
+    display: flex;
+    flex-direction: column;
+    padding: 30px 40px;
+    gap: 30px;
+    border-radius: 8px;
+    box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.366);
+
+}
+
+#form_header{
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+#form_header h1{
+
+font-size: 40px;
+position: relative;
+}
+
+
+
+#form_header h1::before{
+    
+    height: 3px;
+    position: absolute;
+    bottom: 10px;
+    content: '';
+    width: 40%;
+    background-color: var(--color-green-50);
+    border-radius: 2px;
+    }
+
+
+
+
+    #mode_icon{
+        font-size: 20px;
+        cursor: pointer;
+
+    }
+
+    #social_media{
+display: flex;
+justify-content: space-around;
+
+    }
+
+
+    #social_media img:hover{
+        transform: scale(1,2);
+        
+            }
+
+
+
+            #inputs{
+
+                display: flex;
+                display: block;
+                gap: 20px;
+                align-items: center;
+                justify-content: center;
+
+            }
+
+
+            .input-box label {
+                font-size: 14px;
+                color: var(--color-dark-50);
+        
+        }
+        
+        
+        .input-field{
+        
+        display: flex;
+        align-items: center;
+        padding: 3px;
+        gap: 15px;
+        cursor: text;
+        border-bottom: 1px solid var(--color-green-50);
+        color: var(--color-dark-900);
+        }
+
+
+        .input-field input {
+           border: none;
+            background-color: transparent;
+            width: 260px;
+            font-size: 18px;
+    
+    }
+    
+
+
+    .input-field input:focus{
+
+        outline: none;
+    }
+
+
+
+
+    #forget_pass a{
+        font-size: 12px;
+        color: var(--color-dark-50);
+        text-decoration: none;
+
+    }
+
+
+
+
+    #forget_pass a:hover {
+
+color: var(--color-green-50);
+
+    }
+
+    #login_button{
+       border: none;
+       color: var(--color-light-50);
+       font-size: 18px;
+       padding: 5px;
+       background: var(--color-gradient);
+       border-radius: 3px;
+       cursor: pointer;
+       font-weight: bold;
+    }
+
+
+    #login_button:hover{
+
+        transform: scale(1.05);
+    }
+
+
+
+    .dark#login_form{
+
+        color: var(--color-light-50);
+        background-color: var(--color-dark-100);
+
+    }
+
+
+
+    .dark#login_form .input-field input,
+    .dark#login_form .input-field i {
+
+        color: var(--color-light-50);
+
+    }
